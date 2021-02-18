@@ -15,7 +15,7 @@ import MySQLdb
 
 class HgspiderPipeline:
     def __init__(self):
-        self.conn = MySQLdb.connect(host='106.75.65.54', user='spiderpython_dev', password='spiderpython_dev@0126', db='spiderpython_dev', port=7749,charset="utf8", use_unicode=True)
+        self.conn = MySQLdb.connect(host='localhost', user='root', password='123456', db='spiderpython_dev', port=3306,charset="utf8", use_unicode=True)
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
